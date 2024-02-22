@@ -1,13 +1,7 @@
 import { clients } from "../constants";
 import styles from "../style";
-// eslint-disable-next-line no-unused-vars
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/swiper-bundle.min.css';
-// eslint-disable-next-line no-unused-vars
-import Ticker from 'react-ticker'
 
 const Clients = () => (
-<>
   <section className={`${styles.flexCenter} my-4`}>
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
       {clients.map((client) => (
@@ -17,11 +11,6 @@ const Clients = () => (
       ))}
     </div>
   </section>
-  <div className=" bg-slate-300 w-full">
-
-      </div>
-
-  </>
 );
 
 export default Clients;
