@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {web_development,erp, crm,consultant, uiux, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -47,10 +47,10 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "At Habile, we are passionate about crafting exceptional mobile and web applications that transform ideas into innovative digital experiences. With a strong commitment to quality, creativity, and client satisfaction, we offer a comprehensive suite of mobile and web app development services designed to meet the unique needs of businesses and organizations.",
     name: "Herman Jensen",
     title: "Founder & Leader",
-    img: people01,
+    img: web_development,
   },
   {
     id: "feedback-2",
@@ -68,6 +68,51 @@ export const feedback = [
     title: "Founder & Leader",
     img: people03,
   },
+];
+
+export const softwareServices = [
+  {
+    id: "feedback-1",
+    content:
+      "At Habile, we are passionate about crafting exceptional mobile and web applications that transform ideas into innovative digital experiences. With a strong commitment to quality, creativity, and client satisfaction, we offer a comprehensive suite of mobile and web app development services designed to meet the unique needs of businesses and organizations.",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+    img: web_development,
+  },
+  {
+    id: "feedback-1",
+    content:
+      "Enterprise Resource Planning (ERP) is the backbone of modern business management. It's an integrated suite of software applications that centralize and automate core business processes, from finance and human resources to supply chain management and customer relationship management. In today's fast-paced business landscape, successful organizations understand the pivotal role of technology in streamlining operations, enhancing productivity, and achieving sustainable growth. At Habile, we specialize in delivering cutting-edge ERP solutions that empower businesses to thrive in the digital era.",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+    img: erp,
+  },
+  {
+    id: "feedback-1",
+    content:
+      "In today's hyper-connected world, businesses recognize that nurturing strong customer relationships is not just a strategy but a necessity for sustainable success. At Habile, we offer powerful CRM software solutions designed to empower organizations of all sizes to build, manage, and strengthen their customer connections.",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+    img: crm,
+  },
+
+  {
+    id: "feedback-1",
+    content:
+      "At Habile, we believe that a remarkable user experience is at the heart of every successful digital product. Our UI/UX design services are crafted to transform your vision into intuitive, visually stunning, and user-friendly experiences that captivate your audience.",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+    img: uiux,
+  },
+  {
+    id: "feedback-1",
+    content:
+      "At Habile, we are passionate about crafting exceptional mobile and web applications that transform ideas into innovative digital experiences. With a strong commitment to quality, creativity, and client satisfaction, we offer a comprehensive suite of mobile and web app development services designed to meet the unique needs of businesses and organizations.",
+    name: "Herman Jensen",
+    title: "Founder & Leader",
+    img: consultant,
+  },
+
 ];
 
 export const stats = [

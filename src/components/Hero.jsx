@@ -1,6 +1,15 @@
 import styles from "../style";
-import { discount, robot } from "../assets";
+import { discount, robot, card } from "../assets";
 import GetStarted from "./GetStarted";
+import Carousel from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import required styles
+import imgss from '../assets/uiux.jpg'
+import { Fade } from 'react-slideshow-image';
+const images = [
+  card,
+  'https://media.istockphoto.com/id/1004293892/photo/night-streets.jpg?s=612x612&w=0&k=20&c=q_l2uN6mRLHW90k_3suiLqk69MQho6qJQuaMXC6uMhQ=',
+  robot,
+];
 
 const Hero = () => {
   return (
@@ -33,7 +42,23 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+        {/* <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" /> */}
+        <Fade
+        className='flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative'
+      arrows={false} // Hide arrows if desired
+      dots={false} // Hide dots if desired
+      autoplay={true} // Enable autoplay
+      infinite={true} // Enable infinite loop
+      transitionDuration={1000} // Adjust transition duration (in milliseconds)
+      duration={200} // Adjust display duration (in milliseconds)
+      // Other customization options
+    >
+      {images.map((image) => (
+        <div className="flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative" key={image}>
+          <img className=" w-100px" src={image} alt="Popping Image" />
+        </div>
+      ))}
+    </Fade>
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />

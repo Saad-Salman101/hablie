@@ -29,7 +29,7 @@ const Ticker2 = () => {
     ease: "linear",
     repeat: Infinity,
     repeatType: "loop",
-    duration: 10, // Adjust the duration based on your preference
+    duration: 20, // Adjust the duration based on your preference
   };
 
   return (

@@ -23,8 +23,18 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import web_development from './web_development.png';
+import consultant from './consultant.jpeg';
+import crm from './crm.jpg';
+import erp from './erp.webp';
+import uiux from './uiux.jpg';
 
 export {
+  uiux,
+  erp,
+  crm,
+  consultant,
+  web_development,
   airbnb,
   bill,
   binance,

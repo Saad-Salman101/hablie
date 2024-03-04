@@ -3,6 +3,7 @@ import { Billing, Business, CardDeal, CTA, Footer, Navbar, Stats, Testimonials, 
 import Ticker from "./components/Ticker";
 import Ticker2 from "./components/Ticker2";
 import Services from "./components/Services";
+import ServicesHardware from "./components/ServicesHardware";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -25,7 +26,9 @@ const App = () => (
         {/* <Clients /> */}
         <Ticker />
        <Ticker2 />
+       <div className=' w-full text-center my-4 text-white text-[50px] font-extrabold'> Services</div>
        <Services />
+       <ServicesHardware/>
         <Business />
         <Billing />
         <CardDeal />
