@@ -1,9 +1,9 @@
 import styles from "../style";
 import { discount, robot, card } from "../assets";
 import GetStarted from "./GetStarted";
-import Carousel from 'react-responsive-carousel';
+// import Carousel from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import required styles
-import imgss from '../assets/uiux.jpg'
+// import imgss from '../assets/uiux.jpg'
 import { Fade } from 'react-slideshow-image';
 const images = [
   card,
@@ -41,7 +41,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
+      <div className={`flex-1 flex ${styles.flexCenter} h-[100px] md:my-0 my-10 relative`}>
         {/* <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" /> */}
         <Fade
         className='flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative'
@@ -54,7 +54,7 @@ const Hero = () => {
       // Other customization options
     >
       {images.map((image) => (
-        <div className="flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative" key={image}>
+        <div className="flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative bg-green-600" key={image}>
           <img className=" w-100px" src={image} alt="Popping Image" />
         </div>
       ))}
