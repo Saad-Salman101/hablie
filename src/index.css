@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+.image-slider-container {
+  position: relative;
+}
+
+.image-slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 3s ease-in-out;
+}
+
+.image-slider-image.visible {
+  opacity: 1;
+}
+
+.image-slider-image.hidden {
+  opacity: 0;
+}
+
 
 :root {
   --black-gradient: linear-gradient(

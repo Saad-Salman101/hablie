@@ -8,14 +8,22 @@ import Slider from 'react-slick';
 
 const Services = () => {
   const settings = {
-    // Similar settings as before
-    slidesToShow: 2, // Show only one slide at a time for a more 3D effect
-    arrows: false, // Hide default arrows to mimic UI Initiative's style
+    slidesToShow: 2, // Always show only one slide
+    arrows: false, // Hide default arrows
     autoplay: true, // Enable autoplay (optional)
     autoplaySpeed: 2000, // Adjust autoplay speed (optional)
-      dots: true, // Enable pagination dots
+    dots: true, // Enable pagination dots
     infinite: true, // Enable infinite loop
 
+    // Responsive settings for mobile devices
+    responsive: [
+      {
+        breakpoint: 768, // Adjust breakpoint as needed for your mobile view
+        settings: {
+          slidesToShow: 1, // Ensure one slide on mobile
+        },
+      },
+    ],
   };
   return (
     <div>

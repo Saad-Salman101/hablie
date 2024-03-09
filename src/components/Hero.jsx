@@ -5,11 +5,44 @@ import GetStarted from "./GetStarted";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import required styles
 // import imgss from '../assets/uiux.jpg'
 import { Fade } from 'react-slideshow-image';
+import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
+
+
 const images = [
   card,
   'https://media.istockphoto.com/id/1004293892/photo/night-streets.jpg?s=612x612&w=0&k=20&c=q_l2uN6mRLHW90k_3suiLqk69MQho6qJQuaMXC6uMhQ=',
   robot,
 ];
+
+
+// eslint-disable-next-line react/prop-types
+const ImageSlider = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Increment index and loop back to 0 if it exceeds the array length
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Change the interval duration (in milliseconds) as needed
+
+    // Clear the interval when the component is unmounted
+    return () => clearInterval(interval);
+  }, [images]);
+
+  return (
+    <div>
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Image ${index + 1}`}
+          style={{ display: index === currentImageIndex ? 'block' : 'none', transition: 'opacity 3s ease-in-out' }}
+        />
+      ))}
+    </div>
+  );
+};
 
 const Hero = () => {
   return (
@@ -43,13 +76,13 @@ const Hero = () => {
 
       <div className={`flex-1 flex ${styles.flexCenter} h-[100px] md:my-0 my-10 relative`}>
         {/* <img src={robot} alt="billing" className="w-[100%] h-[100%] relative z-[5]" /> */}
-        <Fade
-        className='flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative'
+        {/* <Fade
+        className='flex-1 flex flex-row relative'
       arrows={false} // Hide arrows if desired
       dots={false} // Hide dots if desired
       autoplay={true} // Enable autoplay
       infinite={true} // Enable infinite loop
-      transitionDuration={1000} // Adjust transition duration (in milliseconds)
+      transitionDuration={2000} // Adjust transition duration (in milliseconds)
       duration={200} // Adjust display duration (in milliseconds)
       // Other customization options
     >
@@ -58,13 +91,15 @@ const Hero = () => {
           <img className=" w-100px" src={image} alt="Popping Image" />
         </div>
       ))}
-    </Fade>
-
+    </Fade> */}
+    <div className="my-auto">
+ <ImageSlider images={images} />
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
         {/* gradient end */}
+        </div>
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
