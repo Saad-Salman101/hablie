@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import { softwareServices } from '../constants'
 // import FeedbackCard from './FeedbackCard'
 import Slider from 'react-slick';
-import ServiceCard from './Servicecard';
+import ServiceCard from './ServiceCard1';
 
 const Services = () => {
   const settings = {
