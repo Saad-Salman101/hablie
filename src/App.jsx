@@ -28,7 +28,7 @@ const App = () => (
         <Ticker />
        <Ticker2 />
        <div className=' w-full text-center my-4 text-white text-[50px] font-extrabold'> Services</div>
-       {/* <Services /> */}
+       <Services />
        <ServicesHardware/>
         <Business />
         <Billing />
