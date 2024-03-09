@@ -3,8 +3,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import { softwareServices } from '../constants'
 // import FeedbackCard from './FeedbackCard'
-import ServiceCard from './Servicecard'
 import Slider from 'react-slick';
+import ServiceCard from './Servicecard';
 
 const Services = () => {
   const settings = {
