@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot, card } from "../assets";
+import { discount, robot, card, pic1, pic2, pic3, pic4, pic5, pic6, robo1, robo2, pic7, pic8, pic9, pic10, pic11, pic12 } from "../assets";
 import GetStarted from "./GetStarted";
 // import Carousel from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import required styles
@@ -10,8 +10,17 @@ import { motion } from 'framer-motion';
 
 
 const images = [
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+  pic11,
+  pic12,
+  robo1,
+  robo2,
+  pic5,
+  pic6,
   card,
-  'https://media.istockphoto.com/id/1004293892/photo/night-streets.jpg?s=612x612&w=0&k=20&c=q_l2uN6mRLHW90k_3suiLqk69MQho6qJQuaMXC6uMhQ=',
   robot,
 ];
 

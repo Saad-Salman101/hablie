@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { firestore } from "../firebase/firebase";
 import { addDoc, collection } from 'firebase/firestore';
+import { robo2 } from "../assets";
 
 const ContactUs = () => {
 
@@ -62,16 +63,19 @@ const ContactUs = () => {
       </div>
       <div className="text-white justify-between flex-col px-10 py-12 min-w-[300px]  w-[80%] md:mr-10 sm:mr-5 mr-0 my-5 bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 rounded-xl">
       <div className=" flex justify-center">
+        <div className=" hidden sm:block">
+          <img src={robo2} alt="robo" className="h-[400px]" />
+        </div>
       <form onSubmit={handleSubmit}>
         <div className=" fex flex-col ">
-        <label className=" ml:0 sm:ml-24 mr-4 text-[18px] md:text-[22px]">
+        <label className=" mr-4 text-[18px] md:text-[22px]">
           Name:*
         </label>
           <input className=" w-[200px]h-[30px] bg-gradient-to-br from-gray-700 via-gray-600 to-gray-900 rounded-md text-white border-2 border-black" type="text" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
         <br />
         <div className=" fex flex-col ">
-        <label className="mr-4  ml:0 sm:ml-24 text-[18px] md:text-[22px]">
+        <label className="mr-4  text-[18px] md:text-[22px]">
           Email:*
         </label>
           <input type="email" className=" w-[200px] h-[30px] bg-gradient-to-br from-gray-700 via-gray-600 to-gray-900 rounded-md text-white border-2 border-black" value={email} onChange={(e) => setEmail(e.target.value)} />

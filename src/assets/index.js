@@ -28,8 +28,36 @@ import consultant from './consultant.jpeg';
 import crm from './crm.jpg';
 import erp from './erp.webp';
 import uiux from './uiux.jpg';
+import pic1 from './pic-1.jpg';
+import pic2 from './pic-2.jpg';
+import pic3 from './pic-3.jpg';
+import pic4 from './pic-4.jpg';
+import pic5 from './pic1-r.png';
+import pic6 from './pic2.jpeg';
+import robo1 from './robo1.avif';
+import robo2 from './robo2-r.png';
+import pic7 from './r-download-1.png';
+import pic8 from './r-download-2.png';
+import pic9 from './r-download-3.png';
+import pic10 from './r-download-4.png';
+import pic11 from './r-download-5.png';
+import pic12 from './r-download-6.png';
 
 export {
+  pic12,
+  pic11,
+  pic10,
+  pic9,
+  pic8,
+  pic7,
+  pic5,
+  pic6,
+  robo1,
+  robo2,
+  pic1,
+  pic2,
+  pic3,
+  pic4,
   uiux,
   erp,
   crm,
