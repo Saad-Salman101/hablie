@@ -1,4 +1,5 @@
-import {web_development,erp, crm,consultant, uiux, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {web_development,erp, crm,consultant, uiux, people02, people03, facebook, instagram, linkedin, twitter, send, shield, star  } from "../assets";
+import { IIL, PPP, SAPT, adamjee, afreen, afroze, amarant, anabatla, bakeParlor, brookes, captain, enar, gulf, hirani, ics, ird, iroots, kidney, kn, lucky, mapple, maymar, mehran, mustaqeem, omi, otsuka, paragon, tabros, tufail, unibro, uniferoze, union } from "../assets/ticker";
 
 export const navLinks = [
   {
@@ -224,51 +225,145 @@ export const socialMedia = [
 
 export const clients = [
   {
-    id: "client-1",
-    logo: airbnb,
+    id: "1",
+    logo: afroze,
   },
   {
-    id: "client-2",
-    logo: binance,
+    id: "2",
+    logo: bakeParlor,
   },
   {
-    id: "client-3",
-    logo: coinbase,
+    id: "3",
+    logo: kn,
   },
   {
-    id: "client-4",
-    logo: dropbox,
+    id: "4",
+    logo: otsuka,
   },
   {
-    id: "client-1",
-    logo: airbnb,
+    id: "5",
+    logo: paragon,
   },
   {
-    id: "client-2",
-    logo: binance,
+    id: "6",
+    logo: PPP,
+  }
+  
+];
+
+
+export const clients2 = [
+  {
+    id: "1",
+    logo: adamjee,
   },
   {
-    id: "client-3",
-    logo: coinbase,
+    id: "2",
+    logo: afreen,
   },
   {
-    id: "client-4",
-    logo: dropbox,
+    id: "3",
+    logo: amarant,
   },
   {
-    id: "client-1",
-    logo: airbnb,
+    id: "4",
+    logo: anabatla,
   },
   {
-    id: "client-2",
-    logo: binance,
+    id: "5",
+    logo: brookes,
   },
   {
-    id: "client-3",
-    logo: coinbase,
+    id: "6",
+    logo: captain,
   },
   {
-    id: "client-4",
-    logo: dropbox,
+    id: "7",
+    logo: enar,
   },
+  {
+    id: "8",
+    logo: gulf,
+  },
+  {
+    id: "9",
+    logo: hirani,
+  },
+  {
+    id: "10",
+    logo: ics,
+  },
+  {
+    id: "11",
+    logo: IIL,
+  },
+  {
+    id: "12",
+    logo: ird,
+  },
+];
+export const clients3 = [
+  {
+    id: "1",
+    logo: iroots,
+  },
+  {
+    id: "2",
+    logo: kidney,
+  },
+  {
+    id: "3",
+    logo: kn,
+  },
+  {
+    id: "4",
+    logo: lucky,
+  },
+  {
+    id: "5",
+    logo: mapple,
+  },
+  {
+    id: "6",
+    logo: maymar,
+  },
+  {
+    id: "7",
+    logo: mehran,
+  },
+  {
+    id: "8",
+    logo: mustaqeem,
+  },
+  {
+    id: "9",
+    logo: omi,
+  },
+  {
+    id: "10",
+    logo: tabros,
+  },
+  {
+    id: "11",
+    logo: uniferoze,
+  },
+  {
+    id: "12",
+    logo: union,
+  },
+];
+export const clients4 = [
+  {
+    id: "1",
+    logo: SAPT,
+  },
+  {
+    id: "2",
+    logo: unibro,
+  },
+  {
+    id: "3",
+    logo: uniferoze,
+  },
+  
 ];

@@ -34,7 +34,7 @@ import pic3 from './pic-3.jpg';
 import pic4 from './pic-4.jpg';
 import pic5 from './pic1-r.png';
 import pic6 from './pic2.jpeg';
-import robo1 from './robo1.avif';
+// import robo1 from './robo1.png';
 import robo2 from './robo2-r.png';
 import pic7 from './r-download-1.png';
 import pic8 from './r-download-2.png';
@@ -42,8 +42,25 @@ import pic9 from './r-download-3.png';
 import pic10 from './r-download-4.png';
 import pic11 from './r-download-5.png';
 import pic12 from './r-download-6.png';
+// import afroze from './t-afroze.png';
+// import bakeParlor from './t-bakeParlor.jpg';
+// import kn from './t-kn.jpg';
+// import otsuka from './t-otsuka.jpg';
+// import paragon from './t-paragon.jpg';
+// import PPP from './t-PPP.jpg';
+// import SAPT from './t-SAPT.png';
+// import unibro from './t-unibro.jpg';
+
 
 export {
+  // afroze,
+  // bakeParlor,
+  // kn,
+  // otsuka,
+  // paragon,
+  // PPP,
+  // SAPT,
+  // unibro,
   pic12,
   pic11,
   pic10,
@@ -52,7 +69,7 @@ export {
   pic7,
   pic5,
   pic6,
-  robo1,
+  // robo1,
   robo2,
   pic1,
   pic2,

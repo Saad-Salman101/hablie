@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { motion } from "framer-motion";
-import { clients } from "../constants";
+import {  clients2 } from "../constants";
 
 
 
@@ -29,20 +29,20 @@ const Ticker2 = () => {
     ease: "linear",
     repeat: Infinity,
     repeatType: "loop",
-    duration: 20, // Adjust the duration based on your preference
+    duration: 30, // Adjust the duration based on your preference
   };
 
   return (
-    <div className=" my-2">
+    <div className=" my-2 ">
     <motion.div
       variants={containerVariants}
       initial="start"
       animate="end"
       exit="start"
       transition={transition}
-      style={{ width: "100%", overflow: "hidden", whiteSpace: "nowrap"}}
+      style={{ width: "100%", overflow: "hidden", whiteSpace: "wrap"}}
     >
-     {clients.map((item, index) => (
+     {clients2.map((item, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
@@ -50,9 +50,9 @@ const Ticker2 = () => {
             animate="end"
             exit="start"
             transition={transition}
-            style={{ display: "inline-block", margin: "0 10px" }}
+            style={{ display: "inline-block", margin: "0 10px",  }}
           >
-               <img src={item.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain" />
+               <img src={item.logo} alt="client_logo" className="sm:w-[192px] h-[100px] w-[100px] object-contain" />
           </motion.div>
         ))}
         

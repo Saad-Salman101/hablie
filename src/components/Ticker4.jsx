@@ -1,18 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { motion } from "framer-motion";
-import { clients } from "../constants";
+import {  clients4 } from "../constants";
 
 
 
-const Ticker = () => {
+const Ticker4 = () => {
   const containerVariants = {
     start: {
-      x: "80%", // Initial position outside the container
-    },
-    end: {
-      x: "-90%", // Final position outside the container
-    },
+        x: "-90%", // Initial position outside the container
+      },
+      end: {
+        x: "80%", // Final position outside the container
+      },
   };
 
   const itemVariants = {
@@ -29,11 +29,11 @@ const Ticker = () => {
     ease: "linear",
     repeat: Infinity,
     repeatType: "loop",
-    duration: 10, // Adjust the duration based on your preference
+    duration: 5, // Adjust the duration based on your preference
   };
 
   return (
-    <div className="">
+    <div className=" my-2 ">
     <motion.div
       variants={containerVariants}
       initial="start"
@@ -42,7 +42,7 @@ const Ticker = () => {
       transition={transition}
       style={{ width: "100%", overflow: "hidden", whiteSpace: "wrap"}}
     >
-     {clients.map((item, index) => (
+     {clients4.map((item, index) => (
           <motion.div
             key={index}
             variants={itemVariants}
@@ -50,9 +50,9 @@ const Ticker = () => {
             animate="end"
             exit="start"
             transition={transition}
-            style={{ display: "inline-block", margin: "0 10px" }}
+            style={{ display: "inline-block", margin: "0 10px",  }}
           >
-               <img src={item.logo} alt="client_logo" className="sm:w-[192px] w-[100px] h-[100px] object-contain" />
+               <img src={item.logo} alt="client_logo" className="sm:w-[192px] h-[100px] w-[100px] object-contain" />
           </motion.div>
         ))}
         
@@ -63,4 +63,4 @@ const Ticker = () => {
   );
 };
 
-export default Ticker;
+export default Ticker4;

@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot, card, pic1, pic2, pic3, pic4, pic5, pic6, robo1, robo2, pic7, pic8, pic9, pic10, pic11, pic12 } from "../assets";
+import { discount, robot, card, pic1, pic2, pic3, pic4, pic5, pic6,  robo2, pic7, pic8, pic9, pic10, pic11, pic12 } from "../assets";
 import GetStarted from "./GetStarted";
 // import Carousel from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import required styles
@@ -16,7 +16,7 @@ const images = [
   pic10,
   pic11,
   pic12,
-  robo1,
+
   robo2,
   pic5,
   pic6,

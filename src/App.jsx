@@ -5,6 +5,8 @@ import Ticker2 from "./components/Ticker2";
 import Services from "./components/Services";
 import ServicesHardware from "./components/ServicesHardware";
 import ContactUs from "./components/ContactUs";
+import Ticker3 from "./components/Ticker3";
+import Ticker4 from "./components/Ticker4";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -27,6 +29,8 @@ const App = () => (
         {/* <Clients /> */}
         <Ticker />
        <Ticker2 />
+       <Ticker3 />
+       <Ticker4 />
        <div className=' w-full text-center my-4 text-white text-[50px] font-extrabold'> Services</div>
        <Services />
        <ServicesHardware/>
