@@ -4,7 +4,7 @@ import styles from "../style";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import 'swiper/swiper-bundle.min.css';
 // eslint-disable-next-line no-unused-vars
-import Ticker from 'react-ticker'
+
 
 const Clients = () => (
 <>

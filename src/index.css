@@ -4,6 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* rain.css */
+.raindrop {
+  width: 1px;
+  height: 90px;
+  background: rgba(174, 194, 224, 0.5);
+  position: absolute;
+  bottom: 100%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
 .image-slider-container {
   position: relative;
 }

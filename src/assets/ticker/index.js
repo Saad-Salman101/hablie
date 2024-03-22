@@ -1,9 +1,9 @@
 import afroze from './t-afroze.png';
-import bakeParlor from './t-bakeParlor.jpg';
-import kn from './t-kn.jpg';
-import otsuka from './t-otsuka.jpg';
-import paragon from './t-paragon.jpg';
-import PPP from './t-PPP.jpg';
+import bakeParlor from './t-bakeParlor.png';
+import kn from './t-kn.png';
+import otsuka from './t-otsuka.png';
+import paragon from './t-paragon.png';
+import PPP from './t-PPP.png';
 import SAPT from './t-SAPT.png';
 import unibro from './t-unibro.jpg';
 

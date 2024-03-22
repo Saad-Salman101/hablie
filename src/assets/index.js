@@ -42,6 +42,9 @@ import pic9 from './r-download-3.png';
 import pic10 from './r-download-4.png';
 import pic11 from './r-download-5.png';
 import pic12 from './r-download-6.png';
+import minionsworking from './minionworking.gif';
+import minionsworking2 from './minionworking-2.gif';
+
 // import afroze from './t-afroze.png';
 // import bakeParlor from './t-bakeParlor.jpg';
 // import kn from './t-kn.jpg';
@@ -61,6 +64,8 @@ export {
   // PPP,
   // SAPT,
   // unibro,
+  minionsworking2,
+  minionsworking,
   pic12,
   pic11,
   pic10,
