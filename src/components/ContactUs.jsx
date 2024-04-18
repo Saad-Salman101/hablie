@@ -65,7 +65,7 @@ const ContactUs = () => {
       <div className=" flex justify-center">
         <div className=" hidden sm:block">
           <img src={robo2} alt="robo" className="h-[400px]" />
-          <img src={minionsworking} alt="" className="h-[200px]" />
+        
         </div>
       <form onSubmit={handleSubmit}>
         <div className=" fex flex-col ">

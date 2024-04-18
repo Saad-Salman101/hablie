@@ -161,10 +161,7 @@ const App = () => {
                 {char}
               </motion.span>
             ))}
-            <div className=" relative">
-             <div className="absolute left-20 top-3 z-10"><LightBulb val={bulb} /></div>
-            <img src={minionsworking} alt="" className="h-[100px] z-20" />
-            </div>
+          
           </div>
           <ServicesHardware />
           <Business />
@@ -172,10 +169,7 @@ const App = () => {
           <CardDeal />
           <motion.div variants={revealAnimation} initial="initial" animate="animate" exit="exit" transition={{ ...transition, delay: 0.2 }}>
           <ContactUs />
-          <div className=" relative">
-             <div className="absolute left-20 top-3 z-10"><LightBulb /></div>
-            <img src={minionsworking} alt="" className="h-[100px] z-20" />
-            </div>
+      
           </motion.div>
           <Testimonials />
           
